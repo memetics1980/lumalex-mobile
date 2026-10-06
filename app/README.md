@@ -1,5 +1,9 @@
 # LumaLex
 
+Android user documentation: [中文](../docs/USER_GUIDE.zh-CN.md) /
+[English](../docs/USER_GUIDE.en.md). iOS/iPadOS remains in development; its
+sections below describe developer integration, not a released installer.
+
 LumaLex is a lightweight, local-first dictionary reader for MDX and MDD dictionaries.
 
 ## Release artifacts

@@ -43,3 +43,6 @@
 *.xcarchive
 *.dSYM/
 *.zip
+
+# Android release checksum companions are uploaded with the APK.
+*.apk.sha256
