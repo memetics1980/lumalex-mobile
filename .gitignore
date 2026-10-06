@@ -1,0 +1,45 @@
+# Build products
+/target/
+/app/.dart_tool/
+/app/build/
+/app/android/build/
+/app/windows/releases/
+/app/.flutter-plugins
+/app/.flutter-plugins-dependencies
+/.experiments/
+
+# Built installers and locally packaged theme artifacts.
+*.apk
+*.aab
+*.ipa
+*.mtz
+/app/android/theme-overrides/yishijian/backups/
+/app/android/theme-overrides/yishijian/package/
+
+# Local IDE and operating-system files
+.DS_Store
+.idea/
+.vscode/
+**/__pycache__/
+*.pyc
+
+# Dictionary content stays local. It may be large and may not be redistributable.
+*.mdx
+*.mdd
+
+# Release signing keys are local secrets and must never enter source control.
+/lumalex_key/
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.p8
+*.mobileprovision
+
+# Local configuration and generated Apple artifacts.
+.env
+.env.*
+!.env.example
+*.xcarchive
+*.dSYM/
+*.zip

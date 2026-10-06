@@ -1,0 +1,38 @@
+name: local_dictionary
+description: A local-first MDX/MDD dictionary reader.
+publish_to: none
+version: 0.1.0+48
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  crypto: ^3.0.7
+  dictionary_bridge:
+    path: rust_builder
+  file_picker: ^12.3.0
+  flutter:
+    sdk: flutter
+  flutter_rust_bridge: 2.13.0
+  flutter_inappwebview: ^6.1.5
+  just_audio: ^0.10.6
+  just_audio_windows: ^0.2.3
+  path_provider: ^2.1.6
+  shared_preferences: 2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# Keep the iOS WebView menu suppression inside this project. iOS 18.2+
+# otherwise adds "Copy Link with Highlight" after all ordinary actions have
+# been disabled; see ios/Plugins/flutter_inappwebview_ios/LOCAL_PATCH.md.
+dependency_overrides:
+  flutter_inappwebview_ios:
+    path: ios/Plugins/flutter_inappwebview_ios
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/lumalex-icon-ui.png
